@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="9.718">
+    <testcase classname="F01_AddUserAndGetByID | user could add user and get user by ID" name="F01_AddUserAndGetByID | user could add user and get user by ID" time="9.58">
+        <failure message="The following asserts failed:&#10;&#9;expected [loai] but found [Jaleel]" type="java.lang.AssertionError">
+            <![CDATA[When fire add user request and print the ID.................................passed
+And get user by ID..........................................................passed
+Then assert on status code 201 for add user.................................passed
+And assert on first name on "get user by ID" response.......................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [loai] but found [Jaleel]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at org.example.stepDefs.D01_AddUserGetByID.assertOnFirstName(D01_AddUserGetByID.java:69)
+	at ✽.assert on first name on "get user by ID" response(file:///D:/crs/la%20poire/api%20automation/nopCommerceAutomation/src/main/resources/features/F01_AddUserAndGetByID.feature:11)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
